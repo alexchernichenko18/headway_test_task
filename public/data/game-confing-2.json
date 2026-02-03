@@ -1,0 +1,389 @@
+{
+  "version": 1,
+  "currency": "USD",
+  "steps": [
+    {
+      "id": "s1",
+      "amount": 500,
+      "question": {
+        "id": "q1",
+        "text": "Which continent is the Sahara Desert located on?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "Asia"
+          },
+          {
+            "id": "b",
+            "text": "Africa"
+          },
+          {
+            "id": "c",
+            "text": "Australia"
+          },
+          {
+            "id": "d",
+            "text": "South America"
+          }
+        ],
+        "correctAnswerIds": [
+          "b"
+        ]
+      }
+    },
+    {
+      "id": "s2",
+      "amount": 1000,
+      "question": {
+        "id": "q2",
+        "text": "Which of the following are types of clouds?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "Cumulus"
+          },
+          {
+            "id": "b",
+            "text": "Stratus"
+          },
+          {
+            "id": "c",
+            "text": "Cirrus"
+          },
+          {
+            "id": "d",
+            "text": "Granite"
+          }
+        ],
+        "correctAnswerIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      }
+    },
+    {
+      "id": "s3",
+      "amount": 2000,
+      "question": {
+        "id": "q3",
+        "text": "Which country hosted the 2016 Summer Olympics?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "China"
+          },
+          {
+            "id": "b",
+            "text": "United Kingdom"
+          },
+          {
+            "id": "c",
+            "text": "Brazil"
+          },
+          {
+            "id": "d",
+            "text": "Japan"
+          },
+          {
+            "id": "e",
+            "text": "Greece"
+          }
+        ],
+        "correctAnswerIds": [
+          "c"
+        ]
+      }
+    },
+    {
+      "id": "s4",
+      "amount": 4000,
+      "question": {
+        "id": "q4",
+        "text": "Select all fruits from the list.",
+        "answers": [
+          {
+            "id": "a",
+            "text": "Apple"
+          },
+          {
+            "id": "b",
+            "text": "Carrot"
+          },
+          {
+            "id": "c",
+            "text": "Banana"
+          },
+          {
+            "id": "d",
+            "text": "Potato"
+          },
+          {
+            "id": "e",
+            "text": "Mango"
+          }
+        ],
+        "correctAnswerIds": [
+          "a",
+          "c",
+          "e"
+        ]
+      }
+    },
+    {
+      "id": "s5",
+      "amount": 8000,
+      "question": {
+        "id": "q5",
+        "text": "What does 'HTTP' stand for?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "HyperText Transfer Protocol"
+          },
+          {
+            "id": "b",
+            "text": "High Transmission Text Process"
+          },
+          {
+            "id": "c",
+            "text": "Hyperlink Transfer Program"
+          },
+          {
+            "id": "d",
+            "text": "Home Tool Transfer Protocol"
+          }
+        ],
+        "correctAnswerIds": [
+          "a"
+        ]
+      }
+    },
+    {
+      "id": "s6",
+      "amount": 16000,
+      "question": {
+        "id": "q6",
+        "text": "Which of these numbers are even?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "2"
+          },
+          {
+            "id": "b",
+            "text": "3"
+          },
+          {
+            "id": "c",
+            "text": "4"
+          },
+          {
+            "id": "d",
+            "text": "7"
+          }
+        ],
+        "correctAnswerIds": [
+          "a",
+          "c"
+        ]
+      }
+    },
+    {
+      "id": "s7",
+      "amount": 32000,
+      "question": {
+        "id": "q7",
+        "text": "Which technologies are commonly used in frontend development?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "React"
+          },
+          {
+            "id": "b",
+            "text": "Vue"
+          },
+          {
+            "id": "c",
+            "text": "Angular"
+          },
+          {
+            "id": "d",
+            "text": "Docker"
+          },
+          {
+            "id": "e",
+            "text": "CSS"
+          }
+        ],
+        "correctAnswerIds": [
+          "a",
+          "b",
+          "c",
+          "e"
+        ]
+      }
+    },
+    {
+      "id": "s8",
+      "amount": 64000,
+      "question": {
+        "id": "q8",
+        "text": "Which planet is closest to the Sun?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "Venus"
+          },
+          {
+            "id": "b",
+            "text": "Earth"
+          },
+          {
+            "id": "c",
+            "text": "Mercury"
+          },
+          {
+            "id": "d",
+            "text": "Mars"
+          }
+        ],
+        "correctAnswerIds": [
+          "c"
+        ]
+      }
+    },
+    {
+      "id": "s9",
+      "amount": 125000,
+      "question": {
+        "id": "q9",
+        "text": "Which two countries share the longest land border?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "USA and Canada"
+          },
+          {
+            "id": "b",
+            "text": "Russia and China"
+          },
+          {
+            "id": "c",
+            "text": "India and Pakistan"
+          },
+          {
+            "id": "d",
+            "text": "Brazil and Argentina"
+          }
+        ],
+        "correctAnswerIds": [
+          "a"
+        ]
+      }
+    },
+    {
+      "id": "s10",
+      "amount": 250000,
+      "question": {
+        "id": "q10",
+        "text": "Which of these are JavaScript data types?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "string"
+          },
+          {
+            "id": "b",
+            "text": "number"
+          },
+          {
+            "id": "c",
+            "text": "boolean"
+          },
+          {
+            "id": "d",
+            "text": "float"
+          },
+          {
+            "id": "e",
+            "text": "undefined"
+          }
+        ],
+        "correctAnswerIds": [
+          "a",
+          "b",
+          "c",
+          "e"
+        ]
+      }
+    },
+    {
+      "id": "s11",
+      "amount": 500000,
+      "question": {
+        "id": "q11",
+        "text": "Which of these are renewable energy sources?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "Solar"
+          },
+          {
+            "id": "b",
+            "text": "Wind"
+          },
+          {
+            "id": "c",
+            "text": "Coal"
+          },
+          {
+            "id": "d",
+            "text": "Hydropower"
+          }
+        ],
+        "correctAnswerIds": [
+          "a",
+          "b",
+          "d"
+        ]
+      }
+    },
+    {
+      "id": "s12",
+      "amount": 1000000,
+      "question": {
+        "id": "q12",
+        "text": "Select all true statements about programming.",
+        "answers": [
+          {
+            "id": "a",
+            "text": "JavaScript can run in the browser."
+          },
+          {
+            "id": "b",
+            "text": "HTML is a programming language."
+          },
+          {
+            "id": "c",
+            "text": "CSS is used for styling."
+          },
+          {
+            "id": "d",
+            "text": "TypeScript is a superset of JavaScript."
+          },
+          {
+            "id": "e",
+            "text": "Python is only used for web development."
+          }
+        ],
+        "correctAnswerIds": [
+          "a",
+          "c",
+          "d"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,391 @@
+{
+  "version": 1,
+  "currency": "USD",
+  "steps": [
+    {
+      "id": "s1",
+      "amount": 500,
+      "question": {
+        "id": "q1",
+        "text": "How many days are there in a leap year?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "365"
+          },
+          {
+            "id": "b",
+            "text": "366"
+          },
+          {
+            "id": "c",
+            "text": "364"
+          },
+          {
+            "id": "d",
+            "text": "360"
+          }
+        ],
+        "correctAnswerIds": [
+          "b"
+        ]
+      }
+    },
+    {
+      "id": "s2",
+      "amount": 1000,
+      "question": {
+        "id": "q2",
+        "text": "Which of the following are web browsers?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "Chrome"
+          },
+          {
+            "id": "b",
+            "text": "Firefox"
+          },
+          {
+            "id": "c",
+            "text": "Safari"
+          },
+          {
+            "id": "d",
+            "text": "Linux"
+          }
+        ],
+        "correctAnswerIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      }
+    },
+    {
+      "id": "s3",
+      "amount": 2000,
+      "question": {
+        "id": "q3",
+        "text": "Which language is primarily used for iOS development?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "Swift"
+          },
+          {
+            "id": "b",
+            "text": "Kotlin"
+          },
+          {
+            "id": "c",
+            "text": "Java"
+          },
+          {
+            "id": "d",
+            "text": "C#"
+          },
+          {
+            "id": "e",
+            "text": "Ruby"
+          }
+        ],
+        "correctAnswerIds": [
+          "a"
+        ]
+      }
+    },
+    {
+      "id": "s4",
+      "amount": 4000,
+      "question": {
+        "id": "q4",
+        "text": "Select all prime numbers.",
+        "answers": [
+          {
+            "id": "a",
+            "text": "2"
+          },
+          {
+            "id": "b",
+            "text": "3"
+          },
+          {
+            "id": "c",
+            "text": "4"
+          },
+          {
+            "id": "d",
+            "text": "5"
+          },
+          {
+            "id": "e",
+            "text": "9"
+          }
+        ],
+        "correctAnswerIds": [
+          "a",
+          "b",
+          "d"
+        ]
+      }
+    },
+    {
+      "id": "s5",
+      "amount": 8000,
+      "question": {
+        "id": "q5",
+        "text": "What is the chemical symbol for gold?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "Au"
+          },
+          {
+            "id": "b",
+            "text": "Ag"
+          },
+          {
+            "id": "c",
+            "text": "Gd"
+          },
+          {
+            "id": "d",
+            "text": "Go"
+          }
+        ],
+        "correctAnswerIds": [
+          "a"
+        ]
+      }
+    },
+    {
+      "id": "s6",
+      "amount": 16000,
+      "question": {
+        "id": "q6",
+        "text": "Which two planets are known as gas giants?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "Jupiter"
+          },
+          {
+            "id": "b",
+            "text": "Saturn"
+          },
+          {
+            "id": "c",
+            "text": "Mars"
+          },
+          {
+            "id": "d",
+            "text": "Venus"
+          }
+        ],
+        "correctAnswerIds": [
+          "a",
+          "b"
+        ]
+      }
+    },
+    {
+      "id": "s7",
+      "amount": 32000,
+      "question": {
+        "id": "q7",
+        "text": "Which tools are commonly used for version control?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "Git"
+          },
+          {
+            "id": "b",
+            "text": "SVN"
+          },
+          {
+            "id": "c",
+            "text": "Docker"
+          },
+          {
+            "id": "d",
+            "text": "Mercurial"
+          },
+          {
+            "id": "e",
+            "text": "Jira"
+          }
+        ],
+        "correctAnswerIds": [
+          "a",
+          "b",
+          "d"
+        ]
+      }
+    },
+    {
+      "id": "s8",
+      "amount": 64000,
+      "question": {
+        "id": "q8",
+        "text": "Which ocean is the largest by surface area?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "Atlantic Ocean"
+          },
+          {
+            "id": "b",
+            "text": "Indian Ocean"
+          },
+          {
+            "id": "c",
+            "text": "Pacific Ocean"
+          },
+          {
+            "id": "d",
+            "text": "Arctic Ocean"
+          }
+        ],
+        "correctAnswerIds": [
+          "c"
+        ]
+      }
+    },
+    {
+      "id": "s9",
+      "amount": 125000,
+      "question": {
+        "id": "q9",
+        "text": "Which two languages are most commonly used for backend development?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "Java"
+          },
+          {
+            "id": "b",
+            "text": "Node.js"
+          },
+          {
+            "id": "c",
+            "text": "PHP"
+          },
+          {
+            "id": "d",
+            "text": "HTML"
+          }
+        ],
+        "correctAnswerIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      }
+    },
+    {
+      "id": "s10",
+      "amount": 250000,
+      "question": {
+        "id": "q10",
+        "text": "Which of these are valid HTTP methods?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "GET"
+          },
+          {
+            "id": "b",
+            "text": "POST"
+          },
+          {
+            "id": "c",
+            "text": "PUT"
+          },
+          {
+            "id": "d",
+            "text": "FETCH"
+          },
+          {
+            "id": "e",
+            "text": "DELETE"
+          }
+        ],
+        "correctAnswerIds": [
+          "a",
+          "b",
+          "c",
+          "e"
+        ]
+      }
+    },
+    {
+      "id": "s11",
+      "amount": 500000,
+      "question": {
+        "id": "q11",
+        "text": "Which of these are operating systems?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "Windows"
+          },
+          {
+            "id": "b",
+            "text": "macOS"
+          },
+          {
+            "id": "c",
+            "text": "Linux"
+          },
+          {
+            "id": "d",
+            "text": "Chrome"
+          }
+        ],
+        "correctAnswerIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      }
+    },
+    {
+      "id": "s12",
+      "amount": 1000000,
+      "question": {
+        "id": "q12",
+        "text": "Select all true statements about the Internet.",
+        "answers": [
+          {
+            "id": "a",
+            "text": "It is a global network of computers."
+          },
+          {
+            "id": "b",
+            "text": "It was originally developed for military use."
+          },
+          {
+            "id": "c",
+            "text": "It requires electricity to function."
+          },
+          {
+            "id": "d",
+            "text": "It is controlled by a single company."
+          },
+          {
+            "id": "e",
+            "text": "It enables data exchange worldwide."
+          }
+        ],
+        "correctAnswerIds": [
+          "a",
+          "b",
+          "c",
+          "e"
+        ]
+      }
+    }
+  ]
+}

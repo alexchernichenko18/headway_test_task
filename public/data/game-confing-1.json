@@ -1,0 +1,409 @@
+{
+  "version": 1,
+  "currency": "USD",
+  "steps": [
+    {
+      "id": "s1",
+      "amount": 500,
+      "question": {
+        "id": "q1",
+        "text": "Which planet is known as the Red Planet?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "Mars"
+          },
+          {
+            "id": "b",
+            "text": "Venus"
+          },
+          {
+            "id": "c",
+            "text": "Jupiter"
+          },
+          {
+            "id": "d",
+            "text": "Mercury"
+          }
+        ],
+        "correctAnswerIds": [
+          "a"
+        ]
+      }
+    },
+    {
+      "id": "s2",
+      "amount": 1000,
+      "question": {
+        "id": "q2",
+        "text": "Which of these are primary colors in the RGB color model?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "Red"
+          },
+          {
+            "id": "b",
+            "text": "Green"
+          },
+          {
+            "id": "c",
+            "text": "Blue"
+          },
+          {
+            "id": "d",
+            "text": "Yellow"
+          }
+        ],
+        "correctAnswerIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      }
+    },
+    {
+      "id": "s3",
+      "amount": 2000,
+      "question": {
+        "id": "q3",
+        "text": "Which country has the largest population?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "India"
+          },
+          {
+            "id": "b",
+            "text": "China"
+          },
+          {
+            "id": "c",
+            "text": "United States"
+          },
+          {
+            "id": "d",
+            "text": "Indonesia"
+          },
+          {
+            "id": "e",
+            "text": "Brazil"
+          }
+        ],
+        "correctAnswerIds": [
+          "a"
+        ]
+      }
+    },
+    {
+      "id": "s4",
+      "amount": 4000,
+      "question": {
+        "id": "q4",
+        "text": "Select all animals that are mammals.",
+        "answers": [
+          {
+            "id": "a",
+            "text": "Dolphin"
+          },
+          {
+            "id": "b",
+            "text": "Shark"
+          },
+          {
+            "id": "c",
+            "text": "Bat"
+          },
+          {
+            "id": "d",
+            "text": "Eagle"
+          },
+          {
+            "id": "e",
+            "text": "Kangaroo"
+          }
+        ],
+        "correctAnswerIds": [
+          "a",
+          "c",
+          "e"
+        ]
+      }
+    },
+    {
+      "id": "s5",
+      "amount": 8000,
+      "question": {
+        "id": "q5",
+        "text": "In computing, what does 'CPU' stand for?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "Central Processing Unit"
+          },
+          {
+            "id": "b",
+            "text": "Computer Personal Unit"
+          },
+          {
+            "id": "c",
+            "text": "Core Performance Utility"
+          },
+          {
+            "id": "d",
+            "text": "Central Program Upload"
+          }
+        ],
+        "correctAnswerIds": [
+          "a"
+        ]
+      }
+    },
+    {
+      "id": "s6",
+      "amount": 16000,
+      "question": {
+        "id": "q6",
+        "text": "Which two numbers are consecutive prime numbers?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "11 and 13"
+          },
+          {
+            "id": "b",
+            "text": "12 and 13"
+          },
+          {
+            "id": "c",
+            "text": "15 and 17"
+          },
+          {
+            "id": "d",
+            "text": "21 and 23"
+          }
+        ],
+        "correctAnswerIds": [
+          "a"
+        ]
+      }
+    },
+    {
+      "id": "s7",
+      "amount": 32000,
+      "question": {
+        "id": "q7",
+        "text": "Which of these are programming languages primarily used for web development?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "JavaScript"
+          },
+          {
+            "id": "b",
+            "text": "HTML"
+          },
+          {
+            "id": "c",
+            "text": "CSS"
+          },
+          {
+            "id": "d",
+            "text": "Python"
+          },
+          {
+            "id": "e",
+            "text": "Rust"
+          },
+          {
+            "id": "f",
+            "text": "SQL"
+          }
+        ],
+        "correctAnswerIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      }
+    },
+    {
+      "id": "s8",
+      "amount": 64000,
+      "question": {
+        "id": "q8",
+        "text": "Which city is the capital of Australia?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "Sydney"
+          },
+          {
+            "id": "b",
+            "text": "Melbourne"
+          },
+          {
+            "id": "c",
+            "text": "Canberra"
+          },
+          {
+            "id": "d",
+            "text": "Perth"
+          },
+          {
+            "id": "e",
+            "text": "Brisbane"
+          }
+        ],
+        "correctAnswerIds": [
+          "c"
+        ]
+      }
+    },
+    {
+      "id": "s9",
+      "amount": 125000,
+      "question": {
+        "id": "q9",
+        "text": "Which two elements make up water?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "Hydrogen"
+          },
+          {
+            "id": "b",
+            "text": "Oxygen"
+          },
+          {
+            "id": "c",
+            "text": "Carbon"
+          },
+          {
+            "id": "d",
+            "text": "Nitrogen"
+          }
+        ],
+        "correctAnswerIds": [
+          "a",
+          "b"
+        ]
+      }
+    },
+    {
+      "id": "s10",
+      "amount": 250000,
+      "question": {
+        "id": "q10",
+        "text": "Which of the following are JavaScript array methods?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "map"
+          },
+          {
+            "id": "b",
+            "text": "filter"
+          },
+          {
+            "id": "c",
+            "text": "reduce"
+          },
+          {
+            "id": "d",
+            "text": "compile"
+          },
+          {
+            "id": "e",
+            "text": "push"
+          },
+          {
+            "id": "f",
+            "text": "select"
+          }
+        ],
+        "correctAnswerIds": [
+          "a",
+          "b",
+          "c",
+          "e"
+        ]
+      }
+    },
+    {
+      "id": "s11",
+      "amount": 500000,
+      "question": {
+        "id": "q11",
+        "text": "Which of these are parts of a typical HTTP request?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "Method"
+          },
+          {
+            "id": "b",
+            "text": "Headers"
+          },
+          {
+            "id": "c",
+            "text": "Body"
+          },
+          {
+            "id": "d",
+            "text": "Compiler flags"
+          },
+          {
+            "id": "e",
+            "text": "Status code"
+          }
+        ],
+        "correctAnswerIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      }
+    },
+    {
+      "id": "s12",
+      "amount": 1000000,
+      "question": {
+        "id": "q12",
+        "text": "Choose all statements that are true about the Solar System.",
+        "answers": [
+          {
+            "id": "a",
+            "text": "The Sun is a star."
+          },
+          {
+            "id": "b",
+            "text": "Earth is the largest planet."
+          },
+          {
+            "id": "c",
+            "text": "Jupiter is a gas giant."
+          },
+          {
+            "id": "d",
+            "text": "Saturn has rings."
+          },
+          {
+            "id": "e",
+            "text": "Pluto is classified as a dwarf planet."
+          },
+          {
+            "id": "f",
+            "text": "Venus has two moons."
+          }
+        ],
+        "correctAnswerIds": [
+          "a",
+          "c",
+          "d",
+          "e"
+        ]
+      }
+    }
+  ]
+}

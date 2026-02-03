@@ -1,6 +1,8 @@
 .button {
   appearance: none;
-  border: 1px solid var(--orange-120);
+  height: 64px;
+  width: 296px;
+  border: 1px solid var(--orange-100);
   border-radius: 12px;
   background: var(--orange-100);
   color: var(--white-100);
@@ -15,6 +17,13 @@
     border-color 160ms ease,
     transform 80ms ease;
   user-select: none;
+}
+
+@media (max-width: 1024px) {
+  .button {
+    width: 100%;
+    max-width: 296px;
+  }
 }
 
 .button:hover:not(:disabled) {

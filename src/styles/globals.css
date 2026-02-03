@@ -165,4 +165,10 @@ body {
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   background: var(--white-100);
   color: var(--black-100);
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
 }
