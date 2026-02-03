@@ -123,3 +123,6 @@ npm run test:watch
     }
   ]
 }
+
+Можна перевірити поточний конфіг за лінком
+https://headway-test-task-xi.vercel.app/data/game-confing-1.json
