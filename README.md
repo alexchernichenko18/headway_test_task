@@ -1,36 +1,141 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Headway Test Task
+
+This is a **Next.js** project bootstrapped with  
+[`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+Проєкт використовує **Next.js (App Router)**, **TypeScript**, **ESLint (Airbnb)** та **Vitest** для юніт-тестів.
+
+---
+
+## Requirements
+
+- Node.js **18+**
+- npm / yarn / pnpm / bun
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Install dependencies
 
-```bash
+npm install
+
+---
+
+### Run project in development mode
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Після цього відкрий у браузері:  
+http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Проєкт автоматично перезбирається при зміні файлів.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Available Scripts
 
-To learn more about Next.js, take a look at the following resources:
+У проєкті доступні наступні npm-команди:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### dev
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+npm run dev
 
-## Deploy on Vercel
+Запускає Next.js development server.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Hot Reload
+- Dev-режим
+- Використовується під час розробки
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+### build
+
+npm run build
+
+- Збирає production-версію застосунку
+- Виконує оптимізацію та перевірку типів
+
+---
+
+### start
+
+npm run start
+
+- Запускає production build
+- Перед цим обовʼязково виконати `npm run build`
+
+---
+
+### lint
+
+npm run lint
+
+- Запускає ESLint для всього проєкту
+- Використовується конфіг: **Airbnb + TypeScript + Next.js**
+
+---
+
+### test
+
+npm run test
+
+- Запускає всі юніт-тести
+- Використовується **Vitest + Testing Library**
+- Середовище виконання — `jsdom`
+
+---
+
+### test:watch
+
+npm run test:watch
+
+- Запускає тести у watch-режимі
+- Тести автоматично перезапускаються при зміні файлів
+
+---
+
+## Configuration
+
+### ESLint
+
+Конфігурація ESLint знаходиться у файлах:
+
+- `.eslintrc`
+- `package.json` (extends та plugins)
+
+За потреби правила можна змінювати або вимикати під власні потреби.
+
+---
+
+### Vitest
+
+Конфігурація тестів знаходиться у файлі:
+
+- `vitest.config.ts`
+- `vitest.setup.ts`
+
+Тут можна налаштовувати:
+- environment (`jsdom`, `node`)
+- setup файли
+- coverage
+- aliases
+
+---
+
+### TypeScript
+
+Основні налаштування TypeScript:
+
+- `tsconfig.json`
+
+Можна змінювати strict-режими, paths, target тощо.
+
+---
+
+## Project Structure (high level)
+
+- `src/components` — UI та feature-компоненти
+- `src/context` — React Context (Game state)
+- `src/utils` — helpers та утиліти
+- `src/types` — TypeScript тип
