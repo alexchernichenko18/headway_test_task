@@ -9,6 +9,7 @@ type AnswerItemProps = {
   state?: AnswerState;
   onClick?: MouseEventHandler<HTMLButtonElement>;
   indexCount: number;
+  disabled?: boolean;
 };
 
 function AnswerItem({
@@ -16,6 +17,7 @@ function AnswerItem({
   state = 'inactive',
   onClick,
   indexCount,
+  disabled,
 }: AnswerItemProps) {
   const letter = getAnswerLetter(indexCount);
 
@@ -24,6 +26,7 @@ function AnswerItem({
       type="button"
       className={`${styles.answer} ${styles[state]}`}
       onClick={onClick}
+      disabled={disabled}
     >
       <i aria-hidden />
       <span className={styles.content}>
@@ -39,6 +42,7 @@ function AnswerItem({
 AnswerItem.defaultProps = {
   state: 'inactive',
   onClick: undefined,
+  disabled: false,
 };
 
 export default AnswerItem;

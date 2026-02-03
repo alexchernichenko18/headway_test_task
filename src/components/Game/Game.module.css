@@ -1,0 +1,183 @@
+.page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  background: var(--black-5);
+}
+
+.left {
+  width: calc(100% - 376px);
+  padding: 120px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.topBar {
+  display: none;
+  justify-content: flex-end;
+}
+
+.menuButton {
+  width: 44px;
+  height: 44px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  display: grid;
+  gap: 6px;
+  align-content: center;
+  justify-content: center;
+}
+
+.menuButton span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--black-100);
+}
+
+.question {
+  margin: 0;
+  max-width: 720px;
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: var(--black-100);
+}
+
+.answers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  max-width: 720px;
+}
+
+.right {
+  width: 376px;
+  overflow: hidden;
+  background: var(--white-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 70px;
+}
+
+.amounts {
+  width: 100%;
+  display: grid;
+  gap: 8px;
+  justify-items: center;
+}
+
+.amountRow {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: none;
+}
+
+.modalBackdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  border: 0;
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: var(--black-5);
+  z-index: 51;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+  display: none;
+}
+
+.modalHeader {
+  height: 64px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.closeButton {
+  width: 44px;
+  height: 44px;
+  border: 0;
+  background: transparent;
+  font-size: 32px;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--black-100);
+}
+
+.modalBody {
+  padding: 16px;
+  display: grid;
+  gap: 8px;
+  justify-items: center;
+}
+
+.submitWrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1200px) {
+  .answers {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .modal,
+  .modalOverlay,
+  .modalBackdrop {
+    display: flex;
+  }
+
+  .left {
+    width: 100%;
+    padding: 24px 16px;
+    gap: 32px;
+  }
+
+  .topBar {
+    display: flex;
+    position: absolute;
+    width: calc(100% - 32px);
+    top: 16px;
+    left: 16px;
+  }
+
+  .question {
+    font-size: 18px;
+    max-width: 100%;
+    text-align: center;
+    margin-top: 130px;
+  }
+
+  .answers {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    max-width: 100%;
+  }
+
+  .right {
+    display: none;
+  }
+}

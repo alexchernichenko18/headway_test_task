@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "currency": "USD",
+  "steps": [
+    {
+      "id": "s1",
+      "amount": 500,
+      "question": {
+        "id": "q1",
+        "text": "Which planet is known as the Red Planet?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "Mars"
+          },
+          {
+            "id": "b",
+            "text": "Venus"
+          },
+          {
+            "id": "c",
+            "text": "Jupiter"
+          },
+          {
+            "id": "d",
+            "text": "Mercury"
+          }
+        ],
+        "correctAnswerIds": [
+          "a"
+        ]
+      }
+    },
+    {
+      "id": "s2",
+      "amount": 1000,
+      "question": {
+        "id": "q2",
+        "text": "Which of these are primary colors in the RGB color model?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "Red"
+          },
+          {
+            "id": "b",
+            "text": "Green"
+          },
+          {
+            "id": "c",
+            "text": "Blue"
+          },
+          {
+            "id": "d",
+            "text": "Yellow"
+          }
+        ],
+        "correctAnswerIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      }
+    }
+  ]
+}

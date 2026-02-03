@@ -29,7 +29,11 @@ export default function GameStart() {
         <h1 className={styles.title}>Who wants to be a millionaire?</h1>
 
         <div className={styles.button}>
-          <Button onClick={onStartHandler}>Start</Button>
+          <Button
+            onClick={onStartHandler}
+          >
+            Start
+          </Button>
         </div>
       </div>
     </div>
