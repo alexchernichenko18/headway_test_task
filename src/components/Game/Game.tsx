@@ -12,6 +12,8 @@ import { useGame } from '@/src/context/GameContext';
 import type { AnswerId, GameStep } from '@/src/types/game';
 import formatCurrency from '@/src/utils/formatCurrency';
 import wait from '@/src/utils/wait';
+import { ROUTES } from '@/src/constants';
+import AmountsModal from '../AmountsModal/AmountsModal';
 import styles from './Game.module.css';
 
 type AmountState = 'active' | 'inactive' | 'disabled';
@@ -54,10 +56,21 @@ export default function Game() {
     setRevealState(null);
   }, [currentStep.id]);
 
+  const amountRows = useMemo(
+    () => amountsReversed.map((step) => (
+      <div key={step.id} className={styles.amountRow}>
+        <AmountItem state={getAmountState(step, currentAmount)}>
+          {formatCurrency(step.amount, state.config.currency)}
+        </AmountItem>
+      </div>
+    )),
+    [amountsReversed, currentAmount, state.config.currency],
+  );
+
   const handleWrong = async () => {
     await wait(TIME_TO_WAIT_MS);
     actions.resetGame();
-    router.push('/game-over');
+    router.push(ROUTES.GAME_OVER);
   };
 
   const handleCorrect = async () => {
@@ -65,7 +78,7 @@ export default function Game() {
 
     if (isLastStep) {
       actions.resetGame();
-      router.push('/game-over');
+      router.push(ROUTES.GAME_OVER);
       return;
     }
 
@@ -126,6 +139,14 @@ export default function Game() {
     return 'inactive';
   };
 
+  const onAnswerClick = (answerId: AnswerId) => {
+    if (isMultiSelect) {
+      handleMultiAnswerToggle(answerId);
+    } else {
+      handleSingleAnswerClick(answerId);
+    }
+  };
+
   return (
     <div className={styles.page}>
       <div className={styles.left}>
@@ -146,21 +167,15 @@ export default function Game() {
         <h2 className={styles.question}>{currentStep.question.text}</h2>
 
         <div className={styles.answers}>
-          {currentStep.question.answers.map((a, idx) => (
+          {currentStep.question.answers.map((answer, idx) => (
             <AnswerItem
-              key={a.id}
+              key={answer.id}
               indexCount={idx}
-              state={getAnswerVisualState(a.id)}
-              onClick={() => {
-                if (isMultiSelect) {
-                  handleMultiAnswerToggle(a.id);
-                } else {
-                  handleSingleAnswerClick(a.id);
-                }
-              }}
+              state={getAnswerVisualState(answer.id)}
+              onClick={() => onAnswerClick(answer.id)}
               disabled={isLocked}
             >
-              {a.text}
+              {answer.text}
             </AnswerItem>
           ))}
 
@@ -179,54 +194,19 @@ export default function Game() {
 
       <aside className={styles.right} aria-label="Amounts">
         <div className={styles.amounts}>
-          {amountsReversed.map((s) => (
-            <div key={s.id} className={styles.amountRow}>
-              <AmountItem state={getAmountState(s, currentAmount)}>
-                {formatCurrency(s.amount, state.config.currency)}
-              </AmountItem>
-            </div>
-          ))}
+          {amountRows}
         </div>
       </aside>
 
-      {state.isAmountsOpen && (
-        <div
-          className={styles.modalOverlay}
-          role="dialog"
-          aria-modal="true"
-          aria-label="Amounts modal"
-        >
-          <div className={styles.modal}>
-            <div className={styles.modalHeader}>
-              <button
-                type="button"
-                className={styles.closeButton}
-                aria-label="Close"
-                onClick={actions.closeAmounts}
-              >
-                ×
-              </button>
-            </div>
-
-            <div className={styles.modalBody}>
-              {amountsReversed.map((s) => (
-                <div key={s.id} className={styles.amountRow}>
-                  <AmountItem state={getAmountState(s, currentAmount)}>
-                    {formatCurrency(s.amount, state.config.currency)}
-                  </AmountItem>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <button
-            type="button"
-            className={styles.modalBackdrop}
-            aria-label="Close amounts"
-            onClick={actions.closeAmounts}
-          />
-        </div>
-      )}
+      <AmountsModal
+        isOpen={state.isAmountsOpen}
+        amountSteps={amountsReversed}
+        currentAmount={currentAmount}
+        currency={state.config.currency}
+        onClose={actions.closeAmounts}
+        formatCurrency={formatCurrency}
+        getAmountState={getAmountState}
+      />
     </div>
   );
 }
