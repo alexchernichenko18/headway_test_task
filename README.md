@@ -3,7 +3,8 @@
 This is a **Next.js** project bootstrapped with  
 [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Проєкт використовує **Next.js (App Router)**, **TypeScript**, **ESLint (Airbnb)** та **Vitest** для юніт-тестів.
+Проєкт реалізує гру у стилі **“Who wants to be a millionaire?”**  
+та використовує **Next.js (App Router)**, **TypeScript**, **ESLint (Airbnb)** і **Vitest** для юніт-тестів.
 
 ---
 
@@ -35,107 +36,90 @@ http://localhost:3000
 
 ## Available Scripts
 
-У проєкті доступні наступні npm-команди:
-
 ### dev
 
-npm run dev
-
-Запускає Next.js development server.
-
-- Hot Reload
-- Dev-режим
-- Використовується під час розробки
-
----
+npm run dev  
+Запускає Next.js development server (hot reload, dev mode).
 
 ### build
 
-npm run build
-
-- Збирає production-версію застосунку
-- Виконує оптимізацію та перевірку типів
-
----
+npm run build  
+Збирає production-версію застосунку.
 
 ### start
 
-npm run start
-
-- Запускає production build
-- Перед цим обовʼязково виконати `npm run build`
-
----
+npm run start  
+Запускає production build (після `build`).
 
 ### lint
 
-npm run lint
-
-- Запускає ESLint для всього проєкту
-- Використовується конфіг: **Airbnb + TypeScript + Next.js**
-
----
+npm run lint  
+Запускає ESLint (Airbnb + TypeScript + Next.js).
 
 ### test
 
-npm run test
-
-- Запускає всі юніт-тести
-- Використовується **Vitest + Testing Library**
-- Середовище виконання — `jsdom`
-
----
+npm run test  
+Запускає всі юніт-тести (Vitest + Testing Library).
 
 ### test:watch
 
-npm run test:watch
-
-- Запускає тести у watch-режимі
-- Тести автоматично перезапускаються при зміні файлів
+npm run test:watch  
+Запускає тести у watch-режимі.
 
 ---
 
-## Configuration
+## Game Configuration
 
-### ESLint
+Гра повністю керується **JSON-конфігом**, який описує:
 
-Конфігурація ESLint знаходиться у файлах:
+- валюту
+- кількість кроків
+- питання
+- відповіді
+- правильні варіанти
 
-- `.eslintrc`
-- `package.json` (extends та plugins)
-
-За потреби правила можна змінювати або вимикати під власні потреби.
-
----
-
-### Vitest
-
-Конфігурація тестів знаходиться у файлі:
-
-- `vitest.config.ts`
-- `vitest.setup.ts`
-
-Тут можна налаштовувати:
-- environment (`jsdom`, `node`)
-- setup файли
-- coverage
-- aliases
+Саме цей конфіг визначає **логіку гри** (single / multi select).
 
 ---
 
-### TypeScript
+## Example Game Config
 
-Основні налаштування TypeScript:
+Нижче наведено **повний приклад конфігу**, який використовується у проєкті:
 
-- `tsconfig.json`
-
-Можна змінювати strict-режими, paths, target тощо.
-
----
-
-## Project Structure (high level)
-
-- `src/components` — UI та feature-компоненти
-- `src/context` — React Context (Game state)
-- `src/utils` — helpers та утиліти
-- `src/types` — TypeScript тип
+```json
+{
+  "version": 1,
+  "currency": "USD",
+  "steps": [
+    {
+      "id": "s1",
+      "amount": 500,
+      "question": {
+        "id": "q1",
+        "text": "Which planet is known as the Red Planet?",
+        "answers": [
+          { "id": "a", "text": "Mars" },
+          { "id": "b", "text": "Venus" },
+          { "id": "c", "text": "Jupiter" },
+          { "id": "d", "text": "Mercury" }
+        ],
+        "correctAnswerIds": ["a"]
+      }
+    },
+    {
+      "id": "s2",
+      "amount": 1000,
+      "question": {
+        "id": "q2",
+        "text": "Which of these are primary colors in the RGB color model?",
+        "answers": [
+          { "id": "a", "text": "Red" },
+          { "id": "b", "text": "Green" },
+          { "id": "c", "text": "Blue" },
+          { "id": "d", "text": "Yellow" }
+        ],
+        "correctAnswerIds": ["a", "b", "c"]
+      }
+    }
+  ]
+}
